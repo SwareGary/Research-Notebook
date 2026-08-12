@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研 Notebook"
+  short_description: "生成线性、清晰并具有科学溯源的科研 Notebook"
+  default_prompt: "使用 $research-notebook 根据研究方法和数据生成一份线性、可读、可追溯的科研 Notebook。"
