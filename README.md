@@ -30,33 +30,21 @@ Research-Notebook/
 
 ## 安装
 
-### Codex 用户级安装
+如果 Agent 支持从 GitHub 安装 Skill，直接提供仓库地址：
 
-安装后，该 Skill 可以在当前用户的不同项目中使用。
-
-```powershell
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.agents\skills"
-git clone https://github.com/SwareGary/Research-Notebook.git "$env:USERPROFILE\.agents\skills\research-notebook"
+```text
+https://github.com/SwareGary/Research-Notebook
 ```
 
-如果 Codex 没有立即显示新 Skill，请重新启动 Codex 或新建一个任务。
-
-### Codex 项目级安装
-
-在项目根目录运行：
+也可以手动克隆仓库：
 
 ```powershell
-New-Item -ItemType Directory -Force ".agents\skills"
-git clone https://github.com/SwareGary/Research-Notebook.git ".agents\skills\research-notebook"
+git clone https://github.com/SwareGary/Research-Notebook.git research-notebook
 ```
 
-该 Skill 将随项目保存，并应用于从这个项目目录启动的 Codex 任务。
+将克隆后的 `research-notebook` 文件夹放入 Agent 指定的 Skills 目录，并保留仓库的完整目录结构。安装后如未立即生效，请重新启动 Agent 或新建任务。
 
-### 其他 Agent
-
-如果 Agent 支持 Skills 或类似扩展机制，将整个仓库复制到该平台规定的 Skill 目录。
-
-如果平台没有 Skill 安装机制，可以直接使用：
+如果 Agent 没有 Skill 安装机制，可以直接将下面的文件作为系统提示词或任务前置提示词：
 
 ```text
 references/universal-prompt.md
@@ -66,13 +54,13 @@ references/universal-prompt.md
 
 ## 使用
 
-在支持显式 Skill 调用的 Agent 中输入：
+Skill 标识为 `research-notebook`。调用格式由 Agent 平台决定，也可以直接输入：
 
 ```text
-使用 $research-notebook，根据以下研究方法和数据生成科研 Notebook。
+请使用 research-notebook，根据以下研究方法和数据生成科研 Notebook。
 ```
 
-仓库名称使用 `Research-Notebook`，Skill 内部名称遵循小写命名规则，调用名称为 `$research-notebook`。
+仓库名称使用 `Research-Notebook`，Skill 内部名称遵循小写命名规则，标识为 `research-notebook`。
 
 ## 检查 Notebook
 
