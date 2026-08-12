@@ -60,8 +60,6 @@ Skill 标识为 `research-notebook`。调用格式由 Agent 平台决定，也�
 请使用 research-notebook，根据以下研究方法和数据生成科研 Notebook。
 ```
 
-仓库名称使用 `Research-Notebook`，Skill 内部名称遵循小写命名规则，标识为 `research-notebook`。
-
 ## 检查 Notebook
 
 仓库提供一个只读检查脚本：
