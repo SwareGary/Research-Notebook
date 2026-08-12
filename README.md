@@ -1,8 +1,8 @@
 # Research Notebook
 
-一个用于生成清晰、线性、可追溯科研 Notebook 的 Agent Skill。
+一个用于生成清晰、线性、可追溯结果的 Notebook 的 Agent Skill。
 
-它面向数据分析、数值计算和科研复现任务，默认引导 Agent 使用单个 Jupyter Notebook 组织中小型研究项目，使研究者能够从头到尾阅读、运行、修改和核验代码。
+它面向数据分析、数值计算和科研任务，默认引导 Agent 使用单个 Jupyter Notebook 组织中小型研究项目，使研究者能够从头到尾阅读、运行、修改和核验代码。
 
 ## 主要特点
 
